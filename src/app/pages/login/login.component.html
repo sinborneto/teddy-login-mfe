@@ -1,1 +1,19 @@
-<h1>Olá, seja bem-vindo!</h1>
+<div class="login-content">
+  <p class="welcome-text">Olá, seja bem-vindo!</p>
+  <p-floatlabel variant="on">
+    <input pInputText id="on_label" [(ngModel)]="valueInput" autocomplete="off" class="custom-width" />
+    <label for="on_label">Digite o seu nome:</label>
+  </p-floatlabel>
+  <div class="card flex justify-center">
+    <p-button label="Entrar" severity="warn" class="custom-width" (click)="entrar()"/>
+  </div>
+
+
+  <!-- MODAL DE ALERTA -->
+  <p-dialog [(visible)]="exibirModal" header="⚠️ Atenção" [modal]="true" [closable]="true" [style]="{width: '350px'}">
+    <div class="modal-content">
+      <i class="pi pi-exclamation-triangle icon-alert"></i>
+      <p class="modal-text">Por favor, digite um nome antes de continuar.</p>
+    </div>
+  </p-dialog>
+</div>

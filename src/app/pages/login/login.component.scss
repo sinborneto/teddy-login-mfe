@@ -1,0 +1,70 @@
+.login-content {
+  place-self: center;
+  height: 100vh;
+  align-content: center;
+  width: 100%;
+  place-items: center;
+  background: rgba(240, 238, 233, 0.849);
+}
+
+.custom-width {
+  width: 300px;
+  display: grid;
+}
+
+.welcome-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card {
+  padding-top: 16px;
+  width: 100%;
+  place-items: center;
+}
+
+.modal-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.modal-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.icon-alert {
+  font-size: 2rem;
+  color: #ff9800;
+}
+
+
+@media (max-width: 600px) {
+  .custom-width {
+    width: 100%;
+    max-width: 250px;
+  }
+  p-floatlabel {
+    min-width: 250px;
+  }
+  .welcome-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .custom-width {
+    width: 100%;
+    max-width: 200px;
+  }
+  p-floatlabel {
+    min-width: 0px;
+  }
+  .welcome-text {
+    font-size: 14px;
+  }
+}
