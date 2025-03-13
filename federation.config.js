@@ -8,6 +8,8 @@ module.exports = withNativeFederation({
     './Component': './src/app/pages/login/login.component.ts',
   },
 
+  publicPath: "https://teddy-mu.vercel.app/login-mfe/",
+
   shared: {
     ...shareAll({
       singleton: true,

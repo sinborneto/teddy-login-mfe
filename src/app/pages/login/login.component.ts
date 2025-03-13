@@ -1,4 +1,4 @@
-import { SharedModule } from './../../../../../host/src/app/shared/shared.module';
+import { SharedModule } from '@shared/shared.module';
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -6,7 +6,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { FormsModule } from '@angular/forms';
 import { DialogModule } from 'primeng/dialog';
 import { Router } from '@angular/router';
-import { SharedService } from '../../../../../host/src/app/shared/shared.service';
+import { SharedService } from '@shared/shared.service';
 
 
 @Component({
